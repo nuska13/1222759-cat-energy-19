@@ -1,18 +1,21 @@
-.promo-blog {
+.promo-block {
+  margin: 0 auto;
+  height: 305px;
   background-color: #68b738;
-  background-image: url(../img/index-can-mobile@1x.png), url(../img/index-background-mobile@1x.jpg); 
+  /*background-image: url(../img/index-can-mobile@1x.png), url(../img/index-background-mobile@1x.jpg); 
   background-size: 280px 270px, 320px 305px;
   background-repeat: no-repeat;
-  background-position: top 168px center, top center;
+  background-position: top 168px center, top center;*/
 }
 
 .promo-block__title {
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
-  padding: 29px 37px 19px 38px;
-  margin: 0;
+  margin: 29px 37px 19px 38px;
+  padding: 0;
 }
 
 .promo-block__slogan {
@@ -21,17 +24,32 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  padding-right: 60px;
-  margin: 0;
+  margin: 19px 60px 29px 60px;
 }
 
 .promo-block__button {
-  text-transform: uppercase;
-  padding-bottom: 11px;
-  padding-top: 14px;
-  text-align: center;
   width: 280px;
+  vertical-align: middle;
+  text-align: center;
   background-color: #68b738;
   border: none;
   box-sizing: border-box;
+  margin: 200px 350px 0 350px;//временно для выравнивания пока не вставятся картинки//
+
+  .promo-button__link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    padding-top: 14px;
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

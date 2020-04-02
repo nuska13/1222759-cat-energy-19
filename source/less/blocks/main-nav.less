@@ -6,10 +6,6 @@
   text-transform: uppercase;
 }
 
-.main-nav__wrapper {
-  
-}
-
 .main-nav__list {
   list-style: none;
   padding: 0;
@@ -17,26 +13,28 @@
 }
 
 .site-list__item {
-  text-decoration: none;
   text-align: center;
-  padding: 24px auto;
+  padding: 24px 70px;
 }
 
-.site-list__item:hover {
-  color: rgba(17, 17, 17, 0.6);
+.site-list__link {
+  color: #111111;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &--active {
+    text-decoration: underline;
+    text-decoration-color: #68b738;
+  }
 }
 
-.site-list__item:active {
-  color: rgba(17, 17, 17, 0.3);
-}
-
-.site-list__item--active {
-  text-decoration: underline;
-  text-decoration-color: #68b738;
-}
-
-.main-nav__toggle {
-
-}
 
 
