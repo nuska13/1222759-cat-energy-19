@@ -1,0 +1,38 @@
+.personal-data__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: aqua;
+}
+
+.personal-data__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #222222;
+  margin: 15px;
+  margin-right: 20px;
+}
+
+.personal-data__input {
+  text-transform: uppercase;
+  color: #444444;
+  background-color: #ffffff;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 14px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
+
+  &:required {
+    border: 2px solid #ff8282;
+  }
+}
