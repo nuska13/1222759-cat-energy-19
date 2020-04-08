@@ -2,7 +2,15 @@
   background-color: #f2f2f2;
 }
 
+.page-footer__wrapper {
+  display: flex;
+}
+
 .page-footer__logo {
+  width: 320px;
+}
+
+.page-footer__logo-image-cut {
   width: 128px;
   height: 24px;
   padding: 39px 96px;
@@ -13,6 +21,7 @@
 }
 
 .page-footer__social {
+  width: 320px;
   margin-bottom: 21px;
   margin-top: 24px;
 
@@ -22,6 +31,8 @@
 }
 
 .page-footer__copyright {
+  display: flex;
+  width: 320px;
   margin-bottom: 22px;
   margin-top: 31px;
 
@@ -29,6 +40,7 @@
     font-size: 16px;
     line-height: 16px;
     text-align: left;
+    width: 150px;
   }
 
   .academy-logo {
@@ -44,5 +56,34 @@
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo {
+    width: 180px;
+  }
+
+  .page-footer__social {
+    width: 420px;
+  }
+
+  .page-footer__copyright {
+    width: 120px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo {
+    width: 250px;
+  }
+
+  .page-footer__social {
+    width: 800px;
+  }
+
+  .page-footer__copyright {
+    width: 300px;
   }
 }

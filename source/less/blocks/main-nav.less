@@ -4,6 +4,26 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  width: 320px;
+  margin: o auto;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    font-size: 20px;
+    color: #ffffff;
+  }
 }
 
 .main-nav__list {

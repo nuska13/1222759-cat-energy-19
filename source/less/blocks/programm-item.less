@@ -19,9 +19,18 @@
 }
 
 .programm-item {
+  width: 280px;
   background-color: #f2f2f2;
   padding: 20px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 
   .programm-item__title {
     font-size: 24px;
@@ -46,7 +55,7 @@
     text-decoration: none;
     color: #111111;
 
-    .&:active {
+    &:active {
       color: rgba(17, 17, 17, 0.3);
     }
   }
