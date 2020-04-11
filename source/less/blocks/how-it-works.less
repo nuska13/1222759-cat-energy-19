@@ -11,6 +11,8 @@
 
 .how-it-works__list {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -18,6 +20,7 @@
 
 .how-it-works__item {
   display: flex;
+  flex-wrap: wrap;
   width: 280px;
   padding-left: 20px;
 }
@@ -33,10 +36,11 @@
 
 @media (min-width: @tablet-width) {
   .how-it-works__list {
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .how-it-works__item {
+    flex-direction: column;
     width: 350px;
   }
 

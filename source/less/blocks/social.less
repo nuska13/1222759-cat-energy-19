@@ -14,21 +14,54 @@
   width: 20px;
   height: 20px;
   background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.social-link {
+  list-style: none;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte {
   width: 22px;
   height: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 16px;
+  }
 }
 
 .social__link--instagram {
   width: 16px;
   height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .social__link--facebook {
   width: 10px;
   height: 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
 }
 
 .social__link:hover,

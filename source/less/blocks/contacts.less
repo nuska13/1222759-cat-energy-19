@@ -5,6 +5,7 @@
 .contacts__wrapper {
   width: 320px;
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts__title {
@@ -22,19 +23,11 @@
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    justify-content: space-between;
-  }
-
   .contacts__wrapper {
-    width: 768px;
-  }
-
-  .contacts__map {
     width: 768px;
   }
 }
@@ -42,9 +35,9 @@
 @media (min-width: @desktop-width) {
   .contacts__wrapper {
     width: 570px;
-  }
-
-  .contacts__map {
-    width: 1440px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
   }
 }

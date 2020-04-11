@@ -1,0 +1,28 @@
+.programms__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.programms__item {
+  width: 280px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
