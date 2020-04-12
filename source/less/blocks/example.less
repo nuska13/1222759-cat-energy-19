@@ -1,6 +1,11 @@
 .example {
   padding: 0;
   margin: 0;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .example__title {
@@ -9,13 +14,125 @@
   text-align: left;
 }
 
+.example__result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+    flex-direction: column;
+  }
+}
+
 .example__description {
+  width: 280px;
   padding: 33px 34px 27px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 680px;
+    padding: 60px 63px 56px 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    padding: 76px 111px;
+  }
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 280px; 
+
+  @media (min-width: @tablet-width) {
+    width: 370px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.example__item {
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
+}
+
+.example__value {
+  width: 80px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #111111;
+
+  @media (min-width: @tablet-width) {
+    width: 100px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__text {
+  width: 60px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__cost {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 160px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #111111;
+  
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.example__cost-value {
+  width: 30px;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+    width: 90px;
+  }
 }
