@@ -1,6 +1,10 @@
 .page-footer__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: @mobile-width;
   background-color: #f2f2f2;
-  padding: 39px 20px 22px 20px;
   display: flex;
   flex-direction: column;
 
@@ -8,13 +12,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: @tablet-width;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    width: @desktop-width;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }
 
