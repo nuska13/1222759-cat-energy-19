@@ -1,3 +1,54 @@
+.programm-item__logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 2px 17px 0 10px;
+
+  @media (min-width: @tablet-width) {
+    .programm-item__logo {
+      position: absolute;
+    }
+
+    &--slim {
+      width: 140px;
+      height: 200px;
+      right: 75px;
+      top: 80px;
+    }
+
+    &--pro {
+      width: 268px;
+      height: 200px;
+      right: 27px;
+      top: 124px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .programm-item__logo {
+      position: relative;
+    }
+
+    &--slim {
+      width: 71px;
+      height: 97px;
+      right: auto;
+      top: auto;
+      margin-left: 20px;
+      margin-right: 70px;
+    }
+
+    &--pro {
+      min-width: 134px;
+      min-height: 57px;
+      right: auto;
+      top: auto;
+      margin-right: 45px;
+      margin-left: -15px;
+    }
+  }
+}
+
 .programm-item__logo::after {
   content: "";
   display: block;
@@ -6,20 +57,44 @@
   height: 50px;
   border-radius: 50%;
   background-color: #68b738;
+  top: 0;
   z-index: 0;
 
   @media (min-width: @tablet-width) {
-    width: 200px;
-    height: 200px;
+    .programm-item__logo::after {
+      width: 200px;
+      height: 200px;
+    }
+
+    .programm-item__logo--slim::after {
+      left: -30px;
+      top: 12px;
+    }
+
+    .programm-item__logo--pro::after {
+      left: -35px;
+      top: 35px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 100px;
-    height: 100px;
+    .programm-item__logo::after {
+      width: 100px;
+      height: 100px;
+      top: auto;
+    }
+
+    .programm-item__logo--slim::after {
+      left: -15px;
+    }
+
+    .programm-item__logo--pro::after {
+      left: 17px;
+    }
   }
 }
 
-.programm-item--slim::before {
+.programm-item__logo--slim::before {
   content: "";
   display: block;
   position: absolute;
@@ -28,13 +103,13 @@
   background-position: center;
   width: 35px;
   height: 49px;
+  top: 0;
+  left: 0;
   z-index: 1;
 
   @media (min-width: @tablet-width) {
     width: 141px;
     height: 194px;
-    right: 62px;
-    top: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,7 +118,7 @@
   }
 }
 
-.programm-item--pro::before {
+.programm-item__logo--pro::before {
   content: "";
   display: block;
   position: absolute;
@@ -57,8 +132,6 @@
   @media (min-width: @tablet-width) {
     width: 268px;
     height: 113px;
-    right: 28px;
-    top: 91px;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,10 +147,21 @@
   text-align: left;
   text-transform: uppercase;
   margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 0;
+  }
 }
 
 .programm-item__description {
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programm-item__link-block {
@@ -85,6 +169,12 @@
   line-height: 16px;
   text-align: left;
   text-transform: uppercase;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .programm-item__link {

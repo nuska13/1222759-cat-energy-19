@@ -7,55 +7,97 @@
   font-size: 36px;
   line-height: 60px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .how-it-works__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .how-it-works__item {
-  display: flex;
-  flex-wrap: wrap;
-  width: 280px;
-  padding-left: 20px;
-}
+  margin-bottom: 20px;
 
-.how-it-works__icon {
-  width: 60px;
-  height: 60px;
-}
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
 
-.how-it-works__description {
-  width: 192px;
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-size: 26px 29px;
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-size: 29px 31px;
+  }
+
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-size: 23px 30px;
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-size: 26px 31px;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .how-it-works__list {
-    flex-direction: row;
+  .how-it-works__item::after {
+    position: absolute;
+    display: block;
+    top: -40px;
+    right: 20px;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
   }
 
-  .how-it-works__item {
-    flex-direction: column;
-    width: 350px;
+  &--leaf::after {
+    content: "1";
   }
 
-  .how-it-works__icon {
-    width: 80px;
-    height: 80px;
+  &--powder::after {
+    content: "2";
   }
 
-  .how-it-works__description {
-    width: 244px;
+  &--dining::after {
+    content: "3";
+  }
+
+  &--clock::after {
+    content: "4";
   }
 }
 
-@media (min-width: @desktop-width) {
-  .how-it-works__item {
-    width: 230px;
+.how-it-works__description {
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
