@@ -1,0 +1,28 @@
+.programms__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.programms__item {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  padding: 21px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 81px 280px 62px 53px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 42px 55px 62px 50px;
+    width: 570px;
+  }
+}
