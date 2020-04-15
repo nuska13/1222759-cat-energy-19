@@ -8,6 +8,10 @@
     background-color: #ededed;
     border: none;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+  }
 }
 
 .catalog-item__image-link {
@@ -17,7 +21,7 @@
   @media (min-width: @tablet-width) {
     width: 324px;
     height: 208px;
-    margin-top: -80px;
+    margin-top: -60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -58,5 +62,15 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+.catalog-item__button {
+  @media (min-width: @tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
   }
 }

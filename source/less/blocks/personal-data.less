@@ -1,7 +1,25 @@
+@media (min-width: @desktop-width) {
+  .personal-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 570px;
+  }
+}
+
 .personal-data__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 0;
+  }
+}
+
+.personal-data__item {
+  display: flex;
+  align-items: center;
 }
 
 .personal-data__label {
@@ -11,6 +29,12 @@
   color: #222222;
   margin: 15px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 20px;
+  }
 }
 
 .personal-data__input {
@@ -21,6 +45,7 @@
   box-sizing: border-box;
   padding: 15px;
   margin-bottom: 14px;
+  width: 100%;
 
   &:hover,
   &:focus {
@@ -33,5 +58,12 @@
 
   &:required {
     border: 2px solid #ff8282;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 18px;
+    padding-left: 18px;
   }
 }
