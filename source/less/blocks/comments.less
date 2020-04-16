@@ -5,12 +5,32 @@
   color: #222222;
   margin: 24px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comments__text-area {
+  width: 280px;
+  height: 150px;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
+  text-transform: uppercase;
   color: #444444;
   padding-top: 15px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  @media (min-width: @tablet-width) {
+    width: 631px;
+    height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }

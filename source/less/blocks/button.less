@@ -27,6 +27,15 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    width: 633px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
 
 .button--all-items {
@@ -41,5 +50,13 @@
   &:active {
     background-color: #ebebeb;
     color: rgba(68, 68, 68, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
   }
 }

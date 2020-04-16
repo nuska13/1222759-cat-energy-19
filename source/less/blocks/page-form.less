@@ -39,9 +39,25 @@
     text-decoration: underline;
     text-decoration-color: #68b738;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    margin-bottom: 55px;
+  }
 }
 
 .page-form__text {
   color: #111111;
-  padding: 36px 74px 39px 20px;
+  padding: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }

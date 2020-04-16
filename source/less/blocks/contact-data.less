@@ -3,12 +3,38 @@
   line-height: 24px;
   text-align: left;
   color: #111111;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .contact-data__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+    margin-left: 42px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact-data__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .contact-data__label {
@@ -18,6 +44,11 @@
   color: #222222;
   margin: 15px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .contact-data__input {
@@ -40,5 +71,10 @@
 
   &:required {
     border: 2px solid #ff8282;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
