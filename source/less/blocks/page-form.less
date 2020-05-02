@@ -21,7 +21,7 @@
 .page-form__title {
   font-size: 36px;
   line-height: 60px;
-  text-transform: uppercase;
+  font-weight: 400;
   text-align: center;
   color: #111111;
   margin: 25px;
@@ -42,22 +42,28 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
-    margin-bottom: 55px;
+    margin: 38px 10px 55px 30px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 68px 30px 55px 0;
   }
 }
 
 .page-form__text {
   color: #111111;
+  text-transform: uppercase;
   padding: 0;
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 40px;
+    margin-left: 71px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin-left: 0;
   }
 }

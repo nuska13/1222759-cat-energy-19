@@ -1,24 +1,14 @@
 .main-nav {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color: #111111;
-  text-transform: uppercase;
-  width: 320px;
-  margin: o auto;
+  width: @mobile-width;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #222222;
     width: auto;
-    margin: 0;
+    margin-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 20px;
-    color: #ffffff;
+    width: 479px;
   }
 }
 

@@ -1,0 +1,41 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link {
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  text-align: left;
+  width: 120px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+.copyright__logo {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.copyright__logo-academy {
+  width: 27px;
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
