@@ -1,27 +1,14 @@
-.catalog-item {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border-top: 1px solid #ededed;
-
-  @media (min-width: @tablet-width) {
-    background-color: #ededed;
-    border: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 40px;
-  }
-}
-
 .catalog-item__image-link {
   width: 140px;
   height: 144px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: flex-end;
     width: 324px;
     height: 208px;
-    margin-top: -60px;
+    margin-top: -78px;
+    margin-left: -35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,12 +16,38 @@
   }
 }
 
+.catalog-item__image {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
 .catalog-item__description {
   width: 140px;
-  padding-top: 20px;
+  padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding-top: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 35px;
+  }
 }
 
 .catalog-item__name {
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+
+.catalog-item__name-link {
+  display: inline-block;
   width: 100px;
   font-size: 16px;
   line-height: 20px;
@@ -43,7 +56,9 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    width: 160px;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
@@ -55,19 +70,49 @@
 
 .catalog-item__parameters {
   width: 100%;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    line-height: 16px;
+  }
+}
+
+.catalog-item__parameters-row {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.catalog-item__option {
+  word-break: break-word;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding-top: 7px;
+    padding-bottom: 8px;
+  }
+}
+
+.catalog-item__value {
+  word-break: break-word;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding-top: 7px;
+    padding-bottom: 8px;
   }
 }
 
 .catalog-item__button {
   @media (min-width: @tablet-width) {
-    width: 249px;
+    width: 255px;
+    margin-top: 28px;
+    padding: 12px 0;
   }
 
   @media (min-width: @desktop-width) {

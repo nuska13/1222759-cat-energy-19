@@ -1,34 +1,51 @@
 .site-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    text-align: left;
   }
 }
 
 .site-list__item {
-  width: @mobile-width;
   text-align: center;
-  padding: 24px 70px;
+  border-bottom: 1px solid #e6e6e6;
+}
 
-  @media (min-width: @tablet-width) {
-    width: 152px;
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    text-align: right;
+    padding: 0;
+    margin-bottom: 10px;
+    border: 0;
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
+}
 
-  @media (min-width: @desktop-width) {
-    width: 170px;
+@media (min-width: @desktop-width) {
+  .site-list__item:not(:last-child) {
+    margin-right: 34px;
   }
 }
 
 .site-list__link {
+  position: relative;
   display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: #111111;
   text-decoration: none;
-  padding: 24px;
-  border-bottom: 1px solid #e6e6e6;
+  padding: 22px 0;
 
   &:hover,
   &:focus {
@@ -39,20 +56,60 @@
     color: rgba(17, 17, 17, 0.3);
   }
 
-  &--active {
-    text-decoration: underline;
-    text-decoration-color: #68b738;
-
-    @media (min-width: @desktop-width) {
-      text-decoration-color: #ffffff;
-    }
-  }
-
   @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
     border-bottom: none;
+    padding: 0;
+    color: #222222;
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 12px;
+    font-size: 20px;
     color: #ffffff;
+  }
+}
+
+.site-list__link--active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -8px;
+  height: 3px;
+  background: #68b738;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    bottom: 1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link--index-page {
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: -8px;
+      height: 3px;
+      background: #ffffff;
+      width: 100%;
+    }
   }
 }

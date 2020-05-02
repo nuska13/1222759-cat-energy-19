@@ -1,0 +1,44 @@
+.application {
+  position: relative;
+}
+
+.application__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.application__form {
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 38px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.application__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.application__button {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 21px;
+    margin-bottom: 85px;
+  }
+}

@@ -1,47 +1,109 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+  padding-top: 31px;
+  background-color: #f2f2f2;
 
-.contacts__wrapper {
-  width: @mobile-width;
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
+  &--index-page {
+    background-color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
-    width: 570px;
+    padding: 0;
+  }
+}
+
+.contacts__container {
+  width: @mobile-width;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: @desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 13px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 421px;
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 81px;
+    left: 39px;
     background-color: #ffffff;
+    padding: 43px 75px 39px 76px;
   }
 }
 
 .contacts__title {
+  width: 125px;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
   color: #111111;
 
   @media (min-width: @tablet-width) {
+    width: 170px;
     font-size: 20px;
     line-height: 25px;
   }
 }
 
 .contacts__address {
+  width: 135px;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
+    width: 170px;
     font-size: 16px;
     text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__address--city {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+.contacts__map--image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
   }
 }

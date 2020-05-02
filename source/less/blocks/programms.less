@@ -1,3 +1,17 @@
+.programms {
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+    margin-top: -47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
+    margin-top: 0;
+  }
+}
+
 .programms__list {
   list-style: none;
   padding: 0;
@@ -11,18 +25,39 @@
 }
 
 .programms__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   box-sizing: border-box;
+  position: relative;
   background-color: #f2f2f2;
-  padding: 21px;
+  padding: 22px 20px;
   margin-bottom: 20px;
 
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    min-height: 375px;
+  }
+}
+
+.programms__item--slim {
   @media (min-width: @tablet-width) {
-    padding: 81px 280px 62px 53px;
+    padding: 90px 280px 62px 53px;
     margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 42px 55px 62px 50px;
-    width: 570px;
+    padding: 42px 55px 62px 51px;
+  }
+}
+
+.programms__item--pro {
+  @media (min-width: @tablet-width) {
+    padding: 90px 314px 62px 53px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 53px 55px 62px 51px;
   }
 }
