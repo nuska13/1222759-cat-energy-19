@@ -1,7 +1,7 @@
 var mainNav=document.querySelector(".main-nav");
 var mainNavButton=document.querySelector(".page-header__menu-toggle");
 mainNav.classList.remove("main-nav--nojs");
-mainNavButton.addEventListener("click",function() {
+mainNavButton.addEventListener("click", function() {
   if (mainNav.classList.contains("main-nav--closed")) {
     mainNav.classList.remove("main-nav--closed");
     mainNav.classList.add("main-nav--opened");

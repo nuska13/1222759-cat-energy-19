@@ -1,9 +1,14 @@
 .contacts {
-  padding-top: 31px;
+  padding-top: 12px;
   background-color: #f2f2f2;
 
   &--index-page {
+    padding-top: 12px;
     background-color: #ffffff;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 31px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -37,19 +42,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 11px;
 
   @media (min-width: @tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 13px;
+    margin-top: 33px;
     margin-bottom: 38px;
   }
 
   @media (min-width: @desktop-width) {
     width: 421px;
     position: absolute;
-    top: 81px;
+    top: 64px;
     left: 39px;
     background-color: #ffffff;
     padding: 43px 75px 39px 76px;
@@ -73,7 +78,7 @@
 }
 
 .contacts__address {
-  width: 135px;
+  width: 140px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;

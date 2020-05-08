@@ -25,7 +25,7 @@
     border: 0;
 
     &:not(:last-child) {
-      margin-right: 34px;
+      margin-right: 36px;
     }
   }
 }
@@ -38,14 +38,14 @@
 
 .site-list__link {
   position: relative;
-  display: block;
+  display: inline-block;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
   text-decoration: none;
-  padding: 22px 0;
+  padding: 22px 0 23px;
 
   &:hover,
   &:focus {
@@ -69,7 +69,6 @@
     padding-top: 30px;
     padding-bottom: 12px;
     font-size: 20px;
-    color: #ffffff;
   }
 }
 
@@ -78,10 +77,14 @@
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -8px;
+  bottom: 8px;
   height: 3px;
   background: #68b738;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    bottom: -8px;
+  }
 
   @media (min-width: @desktop-width) {
     bottom: 1px;
@@ -101,12 +104,12 @@
       color: rgba(255, 255, 255, 0.3);
     }
 
-    &--active::after {
+    .site-list__link--active::after {
       content: "";
       position: absolute;
       right: 0;
       left: 0;
-      bottom: -8px;
+      bottom: 0;
       height: 3px;
       background: #ffffff;
       width: 100%;

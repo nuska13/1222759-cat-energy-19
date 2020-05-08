@@ -1,5 +1,12 @@
 .application {
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .application__wrapper {
@@ -12,12 +19,6 @@
 
 .application__form {
   @media (min-width: @tablet-width) {
-    margin-left: 70px;
-    margin-right: 38px;
-    margin-bottom: 74px;
-  }
-
-  @media (min-width: @desktop-width) {
     margin: 0;
   }
 }
@@ -35,10 +36,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 21px;
-    margin-bottom: 85px;
+    margin-bottom: 70px;
+    margin-left: 0;
   }
 }
