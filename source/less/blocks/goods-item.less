@@ -1,5 +1,5 @@
 .goods-item {
-  padding: 15px 0;
+  margin-bottom: 17px;
   border-top: 1px solid #ededed;
 
   &:last-child {
@@ -7,6 +7,10 @@
 
     @media (min-width: @tablet-width) {
       margin-bottom: 69px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 33px;
     }
   }
 
@@ -17,6 +21,7 @@
     flex-wrap: wrap;
     border: 1px solid #cdcdcd;
     border-bottom: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,7 +40,8 @@
   text-align: left;
   text-transform: uppercase;
   color: #222222;
-  margin-bottom: 13px;
+  margin-top: 12px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -91,6 +97,9 @@
 }
 
 .goods-item__button {
+  width: 280px;
+  margin-top: 10px;
+
   @media (min-width: @tablet-width) {
     margin-top: 18px;
     width: 100%;

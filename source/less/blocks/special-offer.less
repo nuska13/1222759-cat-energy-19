@@ -35,19 +35,20 @@
 
 .special-offer__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
 
-  @media (min-width: @desktop-width) {
-    flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
   }
 }
 
 .special-offer__icon {
   width: 56px;
   height: 61px;
-  margin-top: 65px;
+  margin: 63px auto;
   fill: #ffffff;
 
   @media (min-width: @tablet-width) {
@@ -68,7 +69,7 @@
   font-weight: 400;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 43px;
+  margin: 0 0 43px;
 
   @media (min-width: @tablet-width) {
     text-align: left;
