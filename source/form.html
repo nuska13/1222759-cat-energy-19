@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -153,6 +155,13 @@
         <div class="contacts__map">
           <h3 class="maps__title visually-hidden">Как до нас добраться</h3>
           <iframe class="contacts__map--image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056595!2d30.32085335151861!3d59.93871916896543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585636643047!5m2!1sru!2sru" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <p class="contacts__map--picture">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png">
+              <img class="contacts__map--picture-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" width="100%" alt="Санкт-Петербург ул. Большая Конюшенная, д. 19/8">
+            </picture>
+          </p>
         </div>
       </section>
       <div class="page-footer__wrapper">
