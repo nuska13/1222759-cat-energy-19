@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -43,9 +45,9 @@
             <li class="catalog-list__item catalog-item">
               <a class="catalog-item__image-link" href="#">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
-                  <img class="catalog-item__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy pro 500 грамм с курицей">
+                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png, img/chicken-small-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png, img/chicken-small-tablet@2x.png">
+                  <img class="catalog-item__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.png" width="140" height="144" alt="изображение пачки корма Cat energy pro 500 грамм с курицей">
                 </picture>
               </a>
               <div class="catalog-item__description">
@@ -72,9 +74,9 @@
             <li class="catalog-list__item catalog-item">
               <a class="catalog-item__image-link" href="#">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
-                  <img class="catalog-item__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy pro 1000 грамм с курицей">
+                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png, img/chicken-big-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png, img/chicken-big-tablet@2x.png">
+                  <img class="catalog-item__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy pro 1000 грамм с курицей">
                 </picture>
               </a>
               <div class="catalog-item__description">
@@ -101,9 +103,9 @@
             <li class="catalog-list__item catalog-item">
               <a class="catalog-item__image-link" href="#">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
-                  <img class="catalog-item__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy pro 500 грамм с рыбой">
+                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png">
+                  <img class="catalog-item__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy pro 500 грамм с рыбой">
                 </picture>
               </a>
               <div class="catalog-item__description">
@@ -130,9 +132,9 @@
             <li class="catalog-list__item catalog-item">
               <a class="catalog-item__image-link"  href="#">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
-                  <img class="catalog-item__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy pro 1000 грамм с рыбой">
+                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png, img/fish-big-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png, img/fish-big-tablet@2x.png">
+                  <img class="catalog-item__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy pro 1000 грамм с рыбой">
                 </picture>
               </a>
               <div class="catalog-item__description">
@@ -159,9 +161,9 @@
             <li class="catalog-list__item catalog-item">
               <a class="catalog-item__image-link" href="#">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
-                  <img class="catalog-item__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy slim 500 грамм с гречкой">
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png, img/buckwheat-small-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png, img/buckwheat-small-tablet@2x.png">
+                  <img class="catalog-item__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg width="140" height="144" alt="изображение пачки корма Cat energy slim 500 грамм с гречкой">
                 </picture>
               </a>
               <div class="catalog-item__description">
@@ -188,9 +190,9 @@
             <li class="catalog-list__item catalog-item">
               <a class="catalog-item__image-link" href="#">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
-                  <img class="catalog-item__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy slim 1000 грамм с гречкой">
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png, img/buckwheat-big-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png, img/buckwheat-big-tablet@2x.png">
+                  <img class="catalog-item__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy slim 1000 грамм с гречкой">
                 </picture>
               </a>
               <div class="catalog-item__description">
@@ -217,9 +219,9 @@
             <li class="catalog-list__item catalog-item">
               <a class="catalog-item__image-link" href="#">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
-                  <img class="catalog-item__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy slim 500 грамм с рисом">
+                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png, img/rice-small-desktop@2x.png">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png, img/rice-small-tablet@2x.png">
+                  <img class="catalog-item__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg" width="140" height="144" alt="изображение пачки корма Cat energy slim 500 грамм с рисом">
                 </picture>
               </a>
               <div class="catalog-item__description">
@@ -332,6 +334,13 @@
         <div class="contacts__map">
           <h3 class="maps__title visually-hidden">Как до нас добраться</h3>
           <iframe class="contacts__map--image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056595!2d30.32085335151861!3d59.93871916896543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585636643047!5m2!1sru!2sru" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <p class="contacts__map--picture">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png">
+              <img class="contacts__map--picture-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" width="100%" alt="Санкт-Петербург ул. Большая Конюшенная, д. 19/8">
+            </picture>
+          </p>
         </div>
       </section>
       <div class="page-footer__wrapper">
