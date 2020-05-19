@@ -1,5 +1,4 @@
 .selector {
-  position: relative;
   padding: 22px 0;
 
   &::before,
@@ -26,7 +25,7 @@
 
   @media (min-width: @tablet-width) {
     border: 1px solid #cdcdcd;
-    padding: 23px 32px 26px 31px;
+    padding: 23px 32px 31px 31px;
     margin-left: 20px;
     margin-right: 77px;
   }
@@ -34,7 +33,7 @@
 
   @media (min-width: @desktop-width) {
     width: 512px;
-    height: 143px;
+    height: 148px;
     padding-top: 26px;
     padding-left: 27px;
     margin-top: 23px;
@@ -52,11 +51,12 @@
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 
 .selector__label {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -65,6 +65,10 @@
   color: #222222;
   display: flex;
   align-items: center;
+
+  &:active {
+    opacity: 30%;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -77,8 +81,18 @@
   width: 27px;
   height: 27px;
   border-radius: 50%;
+  border: 1px solid #cdcdcd;
   box-shadow: 0 0 0 1px #cdcdcd, 0 0 0 15px #ffffff;
   margin-right: 16px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 
   @media (min-width: @tablet-width) {
     width: 36px;
@@ -86,12 +100,20 @@
     box-shadow: 0 0 0 1px #cdcdcd, 0 0 0 20px #ffffff;
     margin-right: 20px;
   }
+}
 
-  .selector__label::before .selector__radio:checked {
-    box-shadow: 0 0 0 1px #cdcdcd, 0 0 0 9px #ffffff, 0 0 0 15px #68b738;
+.selector__radio:checked + .selector__label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #68b738;
 
-    @media (min-width: @tablet-width) {
-      box-shadow: 0 0 0 1px #cdcdcd, 0 0 0 11px #ffffff, 0 0 0 20px #68b738;
-    }
+  @media (min-width: @tablet-width) {
+    left: 11px;
+    width: 15px;
+    height: 15px;
   }
 }
