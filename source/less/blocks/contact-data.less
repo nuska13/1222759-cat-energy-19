@@ -6,18 +6,18 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 386px;
+    top: 544px;
     width: 100%;
     height: 3px;
     background-color: #68b738;
     z-index: -1;
 
     @media (min-width: @tablet-width) {
-      top: 587px;
+      top: 800px;
     }
 
     @media (min-width: @desktop-width) {
-      top: 314px;
+      top: 530px;
     }
   }
 }
@@ -159,6 +159,10 @@
 
 .contact-data__icon {
   position: absolute;
+
+  &:active {
+    fill: #68b738;
+  }
 
   &--mail {
     width: 17px;
