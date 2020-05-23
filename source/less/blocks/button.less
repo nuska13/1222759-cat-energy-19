@@ -13,16 +13,6 @@
   background-color: #68b738;
   border: none;
 
-  &__link {
-    font-size: 14px;
-    line-height: 18px;
-
-    @media (min-width: @tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-    }
-  }
-
   &:hover,
   &:focus {
     background-color: #5eaa2f;
@@ -30,6 +20,16 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button__link {
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

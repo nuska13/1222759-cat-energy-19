@@ -144,6 +144,14 @@
     border: 1px solid #444444;
   }
 
+  &:valid {
+    border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -195,4 +203,8 @@
       right: 19px;
     }
   }
+}
+
+.contact-data__input:invalid + .contact-data__icon {
+  fill: #ff8282;
 }
