@@ -49,6 +49,7 @@
     "node": "8.16"
   },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "gulp-include": "^2.4.1"
   }
 }

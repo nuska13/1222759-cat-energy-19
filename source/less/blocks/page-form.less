@@ -3,20 +3,17 @@
 }
 
 .page-form__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  width: @mobile-width;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
-    width: @tablet-width;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
     padding-right: 110px;
     padding-left: 110px;
   }
@@ -28,7 +25,7 @@
   font-weight: 400;
   text-align: left;
   color: #111111;
-  margin: 13px 10px 25px 20px;
+  margin: 13px 0 25px 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;

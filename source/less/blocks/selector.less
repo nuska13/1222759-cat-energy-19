@@ -5,9 +5,9 @@
   &::after {
     content: "";
     height: 1px;
+    width: 100%;
     position: absolute;
-    left: -20px;
-    right: -20px;
+    left: 0;
     background-color: #ededed;
 
     @media (min-width: @tablet-width) {
@@ -16,27 +16,26 @@
   }
 
   &::before {
-    top: 0;
+    top: 350px;
   }
 
   &::after {
-    bottom: 0;
+    bottom: 804px;
   }
 
   @media (min-width: @tablet-width) {
     border: 1px solid #cdcdcd;
     padding: 23px 32px 31px 31px;
     margin-left: 20px;
-    margin-right: 77px;
+    width: 88%;
   }
 
-
   @media (min-width: @desktop-width) {
-    width: 512px;
+    width: 50%;
+    flex-basis: 42%;
     padding-top: 20px;
     padding-left: 27px;
     margin-top: 23px;
-    margin-right: 74px;
     margin-bottom: 60px;
   }
 }
