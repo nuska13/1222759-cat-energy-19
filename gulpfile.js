@@ -9,12 +9,12 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
-var jsmin = require("gulp-jsmin");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var jsmin = require("gulp-jsmin");
 var del = require("del");
 var run = require("run-sequence");
 
@@ -115,8 +115,15 @@ gulp.task("server", function () {
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html"));
   gulp.watch("source/*.html", gulp.series("html"));
-  gulp.watch("source/js/**/*.js", gulp.series("js"));
+  gulp.watch("source/js/**/*.js", ["js"]);
 });
 
-gulp.task("build", gulp.series("css", "sprite", "html"));
+gulp.task("build", gulp.series("clean",
+  "copy",
+  "css",
+  "images",
+  "webp",
+  "sprite",
+  "html",
+  "js"));
 gulp.task("start", gulp.series("build", "server"));
